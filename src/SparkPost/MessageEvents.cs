@@ -76,7 +76,7 @@ namespace SparkPost
 
             if (page_links == null) return links;
 
-            if (!string.IsNullOrEmpty(page_links.next))
+            if (!string.IsNullOrEmpty(page_links.next?.ToString()))
             {
                 links.Add(new PageLink
                 {
