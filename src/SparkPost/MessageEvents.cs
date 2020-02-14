@@ -28,7 +28,7 @@ namespace SparkPost
 
             var request = new Request
             {
-                Url = $"/api/{client.Version}/message-events",
+                Url = $"/api/{client.Version}/events/message",
                 Method = "GET",
                 Data = messageEventsQuery
             };
