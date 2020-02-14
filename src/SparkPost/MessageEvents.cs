@@ -76,14 +76,15 @@ namespace SparkPost
 
             if (page_links == null) return links;
 
-            foreach (var page_link in page_links)
+            if (!string.IsNullOrEmpty(page_links.next?.ToString()))
             {
                 links.Add(new PageLink
                 {
-                    Href = page_link.href,
-                    Type = page_link.rel
+                    Href = page_links.next,
+                    Type = "next"
                 });
             }
+
             return links;
         }
 
