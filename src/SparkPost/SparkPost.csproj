@@ -83,6 +83,7 @@
     <Compile Include="MetricsField.cs" />
     <Compile Include="MetricsResourceQuery.cs" />
     <Compile Include="PageLink.cs" />
+    <Compile Include="PreviewTemplateResponse.cs" />
     <Compile Include="RecipientList.cs" />
     <Compile Include="RecipientLists.cs" />
     <Compile Include="RetrieveRecipientListsResponse.cs" />
